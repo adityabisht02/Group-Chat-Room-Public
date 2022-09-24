@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body{
+    
+}
+
+.chat-room{
+    display: flex;
+    flex-direction: column;
+    
+}
+.header
+{
+      padding:20px;
+      font-size:30px;
+      background-color: rgb(5, 5, 110);
+      text-align:center;
+      color:white;
+      font-weight: bolder;
+      font-family: cursive;
+    
+}
+h3{
+    font-family: cursive;
+
+}
+
+.online-members{
+    padding:25px;
+    margin:auto;
+    color: white;
+    display: flex;
+}
+.green-dot{
+    width:25px;
+}
+.online-members-text{
+font-size:20px;
+color:black;
+font-weight:bold
+}
+
+/* the container where messages and files are sent */
+.chat-container{
+    height: 64vh;
+    width:100vw;
+  display:flex;
+  flex-direction: column;
+
+   overflow-y: auto;
+}
+
+
+/* CSS for group and your messages */
+.group-msg-container{
+    float: right;
+    margin-left:5%;
+    margin-right: 5%;
+    margin-top:9px;
+}
+
+.your-msg-container{
+    float: right;
+    margin-right: 5%;
+    margin-left:auto;
+    margin-top:9px;
+    right:0;
+}
+
+
+.name{
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+}
+.date{
+    color:black;
+    font-size: 20px;
+    
+}
+.group-message{
+    padding:12px;
+    font-size:25px;
+    border-radius: 12px;
+    color:white;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+
+    border: 1px solid black;
+    width:fit-content;
+    background: rgb(5, 5, 110);
+    
+}
+.your-message{
+    padding:12px;
+    font-size:25px;
+    border-radius: 12px;
+      border: 1px solid black;
+    width:fit-content;
+    color:white;
+    background: rgb(91, 189, 91);    
+   }
+
+.user-joined-alert{
+    margin:auto;
+    font-size:15px;
+    background-color: black;
+    font-weight: bold;
+    color:white;
+    padding:10px;
+    width: fit-content;
+    border-radius: 12px;
+    float: bottom;
+    margin-top: 10px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+
+/* CSS for file upload containers for groups and your */
+.group-file-upload {
+    padding: 20px;
+    width: fit-content;
+    background-color: rgb(113, 101, 101);
+    border-radius: 10px;
+    display: flex;
+  }
+  .your-file-upload{
+    padding: 20px;
+    width: fit-content;
+    background-color: rgb(113, 101, 101);
+    border-radius: 10px;
+    display: flex;
+  }
+  .group-file-upload-container {
+    
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: 9px;
+    max-width: 90vw;
+  }
+  .your-file-upload-container {
+    float: right;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 9px;
+    max-width: 90vw;
+  }
+  .file-upload-text {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .download-icon {
+    border-radius: 12px;
+    margin-left: 5px;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+  }
+
+
+/* file upload input styling */
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    font-weight:bolder;
+    border: 1px solid black;
+    padding: 19px;
+    opacity:1;
+    cursor: pointer;
+    box-sizing: border-box
+}
+
+/* 
+submit button style */
+.submit-btn{
+    background:green;
+    color:white;
+    font-weight: bolder;
+    font-size: 15px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.submit-btn:hover{
+    background:rgb(83, 223, 83);
+    color:white;
+    cursor: pointer;
+}
+form{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    bottom:0;
+    position: absolute;
+}
+.enter-message{
+    width: 90%;
+    padding: 25px;
+    font-size: 21px;
+   
+
+}
+.submit-btn{
+    width:10%;
+}

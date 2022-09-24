@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat room</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <script defer src="https://group-chat-rooms-backend.herokuapp.com/socket.io/socket.io.js"></script> -->
+    <script defer src="/siofu/client.js"></script>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="./client.js"></script>
+  </head>
+  <body>
+    <div class="chat-room">
+      <div class="header">
+        <h3>Chat room</h3>
+      </div>
+
+      <div class="online-members">
+        <img src="./resources/green dot.png" class="green-dot" />
+        <p class="online-members-text">No one online</p>
+      </div>
+
+      <!-- <div class="group-members-container"> 
+        <img src="" alt=""><p class="group-members">Online :Aman,Athak, adi, vasu, </p>
+        </div> -->
+      <div class="chat-container">
+        <div class="group-msg-container">
+            <p class="name">Aditya Bisht</p>
+            <div class="group-message">
+                <p>
+                  Hey there ! Welcome to this chat room. <br>
+                  Feel free to explore around and test <br>
+                  some of its features. You can send messages as well as any type of files. <br>
+                  Lastly be respectful in the chat.😊
+                </p>
+            </div>
+            <p class="date">12:08</p>
+          </div> 
+            
+          <!-- <div class="your-msg-container">
+            <p class="name">Aditya</p>
+            <div class="your-message">
+                <p>lorem50</p>
+            </div>
+            <p class="date">17:11</p>
+            </div>
+
+           
+            <div class="user-joined-alert">
+                <p class="user-joined-alert-msg">Aditya joined the chat</p>
+            </div>  -->
+
+        <!-- <div class="group-file-upload-container">
+          <p class="name">Aditya Bisht</p>
+          <div class="group-file-upload">
+              <p class="file-upload-text">
+                FML assignment but its
+              </p>
+              <a href="./uploads/Aditya Bisht 25.07.22.pdf" target="blank">
+                <img class="download-icon" src="./resources/downloadpic.png" />
+            </a>
+          </div>
+          <p class="date">12:06</p>
+        </div>
+
+        <div class="your-file-upload-container">
+          <p class="name">Aditya Bisht</p>
+          <div class="your-file-upload">
+            
+              <p class="file-upload-text">
+                FML assignment but its incomplete
+              </p>
+              <a href="./resources/downloadpic.png" target="blank"> <img class="download-icon" src="./resources/downloadpic.png" />
+            </a>
+          </div>
+          <p class="date">12:06</p>
+        </div> -->
+      </div>
+
+      <input type="file" id="avatar" name="avatar">
+
+
+      <form enctype="multipart/form-data" action="/">
+        <input type="text" class="enter-message"placeholder="Type your message ..."/>
+
+        <label for="uploadedfile" class="custom-file-upload">
+          <i class="fa fa-cloud-upload"></i> Upload File
+        </label>
+        <input type="file" id="uploadedfile" name="uploadedfile" multiple />
+
+        <input type="submit" class="submit-btn" value="Send message" />
+      </form>
+
+
+
+
+    </div>
+
+   
+  </body>
+</html>
